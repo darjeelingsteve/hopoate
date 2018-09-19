@@ -26,7 +26,12 @@ public final class DependencyContainer {
         return registrar(for: service).add(serviceCreator: creator, cacheService: cacheService)
     }
     
-    /// As above, but with the chocolatey goodness of autoclosure, when you're just creating a single instance and caching it. Yummy.
+    /// Registers a service for a given service type.
+    ///
+    /// - Parameters:
+    ///   - instance: The closure used to create the service that will be registered.
+    ///   - service: The type of service that the `instance` closure returns.
+    /// - Returns: The `ServiceRegistration` created during registration. Can be passed to the `remove` function to remove the registration.
     @discardableResult
     public func register<Service>(_ instance: @autoclosure @escaping () -> Service, for service: Service.Type) -> ServiceRegistration<Service> {
         return register(service: service, creator: instance)
