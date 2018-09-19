@@ -10,6 +10,9 @@
 		48E409CE2152598500B0D5B5 /* Hopoate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E409C42152598500B0D5B5 /* Hopoate.framework */; };
 		48E409D32152598500B0D5B5 /* HopoateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409D22152598500B0D5B5 /* HopoateTests.swift */; };
 		48E409D52152598500B0D5B5 /* Hopoate.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E409C72152598500B0D5B5 /* Hopoate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48E409DF21525B4000B0D5B5 /* ServiceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409DE21525B4000B0D5B5 /* ServiceRegistration.swift */; };
+		48E409E121525B7600B0D5B5 /* ServiceProviderRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409E021525B7600B0D5B5 /* ServiceProviderRegistrar.swift */; };
+		48E409E321525BA400B0D5B5 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409E221525BA400B0D5B5 /* DependencyContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		48E409CD2152598500B0D5B5 /* HopoateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopoateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E409D22152598500B0D5B5 /* HopoateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopoateTests.swift; sourceTree = "<group>"; };
 		48E409D42152598500B0D5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E409DE21525B4000B0D5B5 /* ServiceRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRegistration.swift; sourceTree = "<group>"; };
+		48E409E021525B7600B0D5B5 /* ServiceProviderRegistrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderRegistrar.swift; sourceTree = "<group>"; };
+		48E409E221525BA400B0D5B5 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				48E409C72152598500B0D5B5 /* Hopoate.h */,
+				48E409E221525BA400B0D5B5 /* DependencyContainer.swift */,
+				48E409E021525B7600B0D5B5 /* ServiceProviderRegistrar.swift */,
+				48E409DE21525B4000B0D5B5 /* ServiceRegistration.swift */,
 				48E409C82152598500B0D5B5 /* Info.plist */,
 			);
 			path = Hopoate;
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					48E409C32152598500B0D5B5 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					48E409CC2152598500B0D5B5 = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E409E121525B7600B0D5B5 /* ServiceProviderRegistrar.swift in Sources */,
+				48E409E321525BA400B0D5B5 /* DependencyContainer.swift in Sources */,
+				48E409DF21525B4000B0D5B5 /* ServiceRegistration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -360,6 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.Hopoate;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -369,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -395,6 +411,7 @@
 		48E409DC2152598500B0D5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93JF9E5XH9;
 				INFOPLIST_FILE = HopoateTests/Info.plist;
@@ -413,6 +430,7 @@
 		48E409DD2152598500B0D5B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93JF9E5XH9;
 				INFOPLIST_FILE = HopoateTests/Info.plist;
