@@ -14,6 +14,8 @@ public final class DependencyContainer {
     
     public static let shared = DependencyContainer()
     
+    public init() {}
+    
     /// Registers a creation closure for a given service type.
     ///
     /// - Parameters:
