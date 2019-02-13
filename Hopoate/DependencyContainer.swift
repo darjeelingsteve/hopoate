@@ -59,6 +59,12 @@ public final class DependencyContainer {
         return serviceRegistration.service
     }
     
+    /// - Parameter serviceType: The service type that we wish to determine whether a service is registered for or not.
+    /// - Returns: A `Bool` indicating whether a service has been registered for the given service type.
+    public func canResolve<Service>(_ serviceType: Service.Type) -> Bool {
+        return optionalResolve(serviceType) != nil
+    }
+    
     /// Removes the given service registration from the receiver, so that creation closure given at registration will not be invoked again.
     ///
     /// - Parameter serviceRegistration: The service registration to be removed.

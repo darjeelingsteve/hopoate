@@ -78,6 +78,14 @@ class DependencyContainerTests: XCTestCase {
         dependencyContainer.optionalResolve(TestProtocol.self)?.doSomething()
         XCTAssertTrue(objectOne.receivedDoSomethingMessage)
     }
+    
+    func testItDeterminesWhetherAServiceCanBeResolvedOrNot() {
+        XCTAssertFalse(dependencyContainer.canResolve(TestProtocol.self))
+        dependencyContainer.register(service: TestProtocol.self) {
+            TestClass()
+        }
+        XCTAssertTrue(dependencyContainer.canResolve(TestProtocol.self))
+    }
 }
 
 // MARK: - Caching
