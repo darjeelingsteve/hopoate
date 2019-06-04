@@ -83,7 +83,8 @@
 				48E409DE21525B4000B0D5B5 /* ServiceRegistration.swift */,
 				48E409C82152598500B0D5B5 /* Info.plist */,
 			);
-			path = Hopoate;
+			name = Hopoate;
+			path = Sources/Hopoate;
 			sourceTree = "<group>";
 		};
 		48E409D12152598500B0D5B5 /* HopoateTests */ = {
@@ -92,7 +93,8 @@
 				48E409E421525BF100B0D5B5 /* DependencyContainerTests.swift */,
 				48E409D42152598500B0D5B5 /* Info.plist */,
 			);
-			path = HopoateTests;
+			name = HopoateTests;
+			path = Tests/HopoateTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,7 +366,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Hopoate/Info.plist;
+				INFOPLIST_FILE = Sources/Hopoate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -393,7 +395,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Hopoate/Info.plist;
+				INFOPLIST_FILE = Sources/Hopoate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -415,7 +417,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = HopoateTests/Info.plist;
+				INFOPLIST_FILE = Tests/HopoateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,7 +436,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = HopoateTests/Info.plist;
+				INFOPLIST_FILE = Tests/HopoateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
