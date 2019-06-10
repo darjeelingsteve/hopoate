@@ -34,7 +34,7 @@ final class ServiceProviderRegistrar {
     ///
     /// - Parameter serviceRegistration: The service registration to be removed from the receiver.
     func remove<Service>(serviceRegistration: ServiceRegistration<Service>) {
-        guard let index = serviceRegistrations.index(where: { $0 === serviceRegistration }) else {
+        guard let index = serviceRegistrations.firstIndex(where: { $0 === serviceRegistration }) else {
             return
         }
         serviceRegistrations.remove(at: index)
