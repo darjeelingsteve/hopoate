@@ -6,11 +6,13 @@ import PackageDescription
 let package = Package(
     name: "Hopoate",
     products: [
-      .library(name: "Hopoate", targets: ["Hopoate"])
+      .library(name: "Hopoate", targets: ["Hopoate"]),
+      .library(name: "HopoateTestingHelpers", targets: ["HopoateTestingHelpers"])
     ],
     dependencies: [],
     targets: [
       .target(name: "Hopoate", dependencies: []),
+      .target(name: "HopoateTestingHelpers", dependencies: ["Hopoate"]),
       .testTarget(name: "HopoateTests", dependencies: ["Hopoate"])
     ],
     swiftLanguageVersions: [.v5]
