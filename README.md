@@ -112,3 +112,26 @@ resolve(AnalyticsProviding.self)
 // Shorthand for DependencyContainer.shared.optionalResolve(Maybe.self)
 optionalResolve(Maybe.self)
 ```
+
+
+
+## Installation
+
+### Swift Package Manager
+
+Add the following to your package's dependencies in your package manifest:
+
+```swift
+.package(name: "Hopoate", url: "https://github.com/darjeelingsteve/hopoate", from: "1.0.0"),
+```
+
+
+
+### Carthage
+
+Add the following to your `Cartfile`:
+
+```
+github "darjeelingsteve/Hopoate"
+```
+
