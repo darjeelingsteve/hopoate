@@ -114,9 +114,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		48E409C32152598500B0D5B5 /* Hopoate */ = {
+		48E409C32152598500B0D5B5 /* Hopoate iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48E409D82152598500B0D5B5 /* Build configuration list for PBXNativeTarget "Hopoate" */;
+			buildConfigurationList = 48E409D82152598500B0D5B5 /* Build configuration list for PBXNativeTarget "Hopoate iOS" */;
 			buildPhases = (
 				48E409BF2152598500B0D5B5 /* Headers */,
 				48E409C02152598500B0D5B5 /* Sources */,
@@ -127,7 +127,7 @@
 			);
 			dependencies = (
 			);
-			name = Hopoate;
+			name = "Hopoate iOS";
 			productName = Hopoate;
 			productReference = 48E409C42152598500B0D5B5 /* Hopoate.framework */;
 			productType = "com.apple.product-type.framework";
@@ -183,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				48E409C32152598500B0D5B5 /* Hopoate */,
+				48E409C32152598500B0D5B5 /* Hopoate iOS */,
 				48E409CC2152598500B0D5B5 /* HopoateTests */,
 			);
 		};
@@ -231,7 +231,7 @@
 /* Begin PBXTargetDependency section */
 		48E409D02152598500B0D5B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 48E409C32152598500B0D5B5 /* Hopoate */;
+			target = 48E409C32152598500B0D5B5 /* Hopoate iOS */;
 			targetProxy = 48E409CF2152598500B0D5B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -382,8 +382,8 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.4.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.Hopoate;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.Hopoate-iOS";
+				PRODUCT_NAME = Hopoate;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -412,8 +412,8 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.4.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.Hopoate;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.Hopoate-iOS";
+				PRODUCT_NAME = Hopoate;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48E409D82152598500B0D5B5 /* Build configuration list for PBXNativeTarget "Hopoate" */ = {
+		48E409D82152598500B0D5B5 /* Build configuration list for PBXNativeTarget "Hopoate iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48E409D92152598500B0D5B5 /* Debug */,

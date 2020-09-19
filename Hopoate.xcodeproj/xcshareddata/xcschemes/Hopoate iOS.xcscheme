@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "48E409C32152598500B0D5B5"
                BuildableName = "Hopoate.framework"
-               BlueprintName = "Hopoate"
+               BlueprintName = "Hopoate iOS"
                ReferencedContainer = "container:Hopoate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +32,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "48E409C32152598500B0D5B5"
             BuildableName = "Hopoate.framework"
-            BlueprintName = "Hopoate"
+            BlueprintName = "Hopoate iOS"
             ReferencedContainer = "container:Hopoate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,7 +64,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "48E409C32152598500B0D5B5"
             BuildableName = "Hopoate.framework"
-            BlueprintName = "Hopoate"
+            BlueprintName = "Hopoate iOS"
             ReferencedContainer = "container:Hopoate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,7 +80,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "48E409C32152598500B0D5B5"
             BuildableName = "Hopoate.framework"
-            BlueprintName = "Hopoate"
+            BlueprintName = "Hopoate iOS"
             ReferencedContainer = "container:Hopoate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
