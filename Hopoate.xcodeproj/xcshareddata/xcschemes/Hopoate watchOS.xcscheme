@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "48E41CE425165A5800B75D54"
+               BlueprintIdentifier = "48E41D0A25165B4400B75D54"
                BuildableName = "Hopoate.framework"
-               BlueprintName = "Hopoate tvOS"
+               BlueprintName = "Hopoate watchOS"
                ReferencedContainer = "container:Hopoate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "48E41CE425165A5800B75D54"
+            BlueprintIdentifier = "48E41D0A25165B4400B75D54"
             BuildableName = "Hopoate.framework"
-            BlueprintName = "Hopoate tvOS"
+            BlueprintName = "Hopoate watchOS"
             ReferencedContainer = "container:Hopoate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

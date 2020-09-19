@@ -18,6 +18,11 @@
 		48E41CFA25165ABF00B75D54 /* ServiceProviderRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409E021525B7600B0D5B5 /* ServiceProviderRegistrar.swift */; };
 		48E41CFE25165AC400B75D54 /* ServiceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409DE21525B4000B0D5B5 /* ServiceRegistration.swift */; };
 		48E41D0225165AC700B75D54 /* DependencyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A410A22DDFD1800A7FC02 /* DependencyWrappers.swift */; };
+		48E41D0F25165B4400B75D54 /* Hopoate.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E41D0D25165B4400B75D54 /* Hopoate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48E41D2325165B7C00B75D54 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409E221525BA400B0D5B5 /* DependencyContainer.swift */; };
+		48E41D2825165B7D00B75D54 /* ServiceProviderRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409E021525B7600B0D5B5 /* ServiceProviderRegistrar.swift */; };
+		48E41D2925165B7F00B75D54 /* ServiceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409DE21525B4000B0D5B5 /* ServiceRegistration.swift */; };
+		48E41D2E25165B8100B75D54 /* DependencyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A410A22DDFD1800A7FC02 /* DependencyWrappers.swift */; };
 		964A410B22DDFD1800A7FC02 /* DependencyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964A410A22DDFD1800A7FC02 /* DependencyWrappers.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +49,9 @@
 		48E41CE525165A5800B75D54 /* Hopoate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hopoate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E41CE725165A5800B75D54 /* Hopoate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hopoate.h; sourceTree = "<group>"; };
 		48E41CE825165A5800B75D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E41D0B25165B4400B75D54 /* Hopoate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hopoate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E41D0D25165B4400B75D54 /* Hopoate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hopoate.h; sourceTree = "<group>"; };
+		48E41D0E25165B4400B75D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		964A410A22DDFD1800A7FC02 /* DependencyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyWrappers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +78,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		48E41D0825165B4400B75D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +94,7 @@
 				48E409C62152598500B0D5B5 /* Hopoate */,
 				48E409D12152598500B0D5B5 /* HopoateTests */,
 				48E41CE625165A5800B75D54 /* Hopoate tvOS */,
+				48E41D0C25165B4400B75D54 /* Hopoate watchOS */,
 				48E409C52152598500B0D5B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +105,7 @@
 				48E409C42152598500B0D5B5 /* Hopoate.framework */,
 				48E409CD2152598500B0D5B5 /* HopoateTests.xctest */,
 				48E41CE525165A5800B75D54 /* Hopoate.framework */,
+				48E41D0B25165B4400B75D54 /* Hopoate.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +143,15 @@
 			path = "Hopoate tvOS";
 			sourceTree = "<group>";
 		};
+		48E41D0C25165B4400B75D54 /* Hopoate watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				48E41D0D25165B4400B75D54 /* Hopoate.h */,
+				48E41D0E25165B4400B75D54 /* Info.plist */,
+			);
+			path = "Hopoate watchOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -142,6 +168,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E41CE925165A5800B75D54 /* Hopoate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E41D0625165B4400B75D54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E41D0F25165B4400B75D54 /* Hopoate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +236,24 @@
 			productReference = 48E41CE525165A5800B75D54 /* Hopoate.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		48E41D0A25165B4400B75D54 /* Hopoate watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E41D1025165B4400B75D54 /* Build configuration list for PBXNativeTarget "Hopoate watchOS" */;
+			buildPhases = (
+				48E41D0625165B4400B75D54 /* Headers */,
+				48E41D0725165B4400B75D54 /* Sources */,
+				48E41D0825165B4400B75D54 /* Frameworks */,
+				48E41D0925165B4400B75D54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hopoate watchOS";
+			productName = "Hopoate watchOS";
+			productReference = 48E41D0B25165B4400B75D54 /* Hopoate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -223,6 +275,9 @@
 					48E41CE425165A5800B75D54 = {
 						CreatedOnToolsVersion = 12.0;
 					};
+					48E41D0A25165B4400B75D54 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = 48E409BE2152598500B0D5B5 /* Build configuration list for PBXProject "Hopoate" */;
@@ -240,6 +295,7 @@
 			targets = (
 				48E409C32152598500B0D5B5 /* Hopoate iOS */,
 				48E41CE425165A5800B75D54 /* Hopoate tvOS */,
+				48E41D0A25165B4400B75D54 /* Hopoate watchOS */,
 				48E409CC2152598500B0D5B5 /* HopoateTests */,
 			);
 		};
@@ -261,6 +317,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		48E41CE325165A5800B75D54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E41D0925165B4400B75D54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,6 +360,17 @@
 				48E41CFA25165ABF00B75D54 /* ServiceProviderRegistrar.swift in Sources */,
 				48E41D0225165AC700B75D54 /* DependencyWrappers.swift in Sources */,
 				48E41CF625165ABD00B75D54 /* DependencyContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E41D0725165B4400B75D54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E41D2925165B7F00B75D54 /* ServiceRegistration.swift in Sources */,
+				48E41D2825165B7D00B75D54 /* ServiceProviderRegistrar.swift in Sources */,
+				48E41D2E25165B8100B75D54 /* DependencyWrappers.swift in Sources */,
+				48E41D2325165B7C00B75D54 /* DependencyContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +656,58 @@
 			};
 			name = Release;
 		};
+		48E41D1125165B4400B75D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Hopoate watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.Hopoate-watchOS";
+				PRODUCT_NAME = Hopoate;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		48E41D1225165B4400B75D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Hopoate watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.Hopoate-watchOS";
+				PRODUCT_NAME = Hopoate;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -617,6 +743,15 @@
 			buildConfigurations = (
 				48E41CEB25165A5800B75D54 /* Debug */,
 				48E41CEC25165A5800B75D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E41D1025165B4400B75D54 /* Build configuration list for PBXNativeTarget "Hopoate watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E41D1125165B4400B75D54 /* Debug */,
+				48E41D1225165B4400B75D54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
