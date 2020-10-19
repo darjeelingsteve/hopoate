@@ -39,6 +39,31 @@ public final class DependencyContainer {
         return register(service: service, creator: instance)
     }
     
+    /// Registers a creation closure for a given service type and removes any existing services registered for the service type.
+    ///
+    /// - Parameters:
+    ///   - service: The type of service that the creation closure returns.
+    ///   - cacheService: Determines whether the result of calling the creator should be cached or not. Defaults to `true`.
+    ///   - creator: The closure that will be executed when resolving a service of the given type.
+    /// - Returns: The `ServiceRegistration` created during registration. Can be passed to the `remove` function to remove the registration.
+    @discardableResult
+    public func overwriteExistingRegistrations<Service>(service: Service.Type, cacheService: Bool = true, creator: @escaping () -> Service) -> ServiceRegistration<Service> {
+        let registrar = self.registrar(for: service)
+        registrar.removeAllRegistrations()
+        return register(service: service, cacheService: cacheService, creator: creator)
+    }
+    
+    /// Registers a service for a given service type and removes any existing services registered for the service type.
+    ///
+    /// - Parameters:
+    ///   - instance: The closure used to create the service that will be registered.
+    ///   - service: The type of service that the `instance` closure returns.
+    /// - Returns: The `ServiceRegistration` created during registration. Can be passed to the `remove` function to remove the registration.
+    @discardableResult
+    public func overwriteExistingRegistrations<Service>(withService instance: @autoclosure @escaping () -> Service, for service: Service.Type) -> ServiceRegistration<Service> {
+        return overwriteExistingRegistrations(service: service, creator: instance)
+    }
+    
     /// - Parameter serviceType: The service type that we wish to find a service for.
     /// - Returns: A service instance that satisfies the given service type. Requesting a service for a service type that has not been registered is considered a programming error and will cause a fatal error.
     public func resolve<Service>(_ serviceType: Service.Type) -> Service {
