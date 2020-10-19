@@ -40,6 +40,11 @@ final class ServiceProviderRegistrar {
         serviceRegistrations.remove(at: index)
     }
     
+    /// Removes all services registered with the receiver.
+    func removeAllRegistrations() {
+        serviceRegistrations.removeAll()
+    }
+    
     /// - Returns: The most recent service registration added to the receiver.
     func mostRecentServiceEntry() -> AnyObject? {
         return serviceRegistrations.last

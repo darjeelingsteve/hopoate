@@ -86,6 +86,19 @@ class DependencyContainerTests: XCTestCase {
         }
         XCTAssertTrue(dependencyContainer.canResolve(TestProtocol.self))
     }
+    
+    func testItCanOverwriteExistingServiceRegistrations() {
+        let objectOne = TestClass()
+        dependencyContainer.register(objectOne, for: TestProtocol.self)
+        XCTAssertTrue(dependencyContainer.resolve(TestProtocol.self) === objectOne)
+        
+        let objectTwo = TestClass()
+        let objectTwoRegistration = dependencyContainer.overwriteExistingRegistrations(withService: objectTwo, for: TestProtocol.self)
+        XCTAssertTrue(dependencyContainer.resolve(TestProtocol.self) === objectTwo)
+        
+        dependencyContainer.remove(objectTwoRegistration)
+        XCTAssertNil(dependencyContainer.optionalResolve(TestProtocol.self))
+    }
 }
 
 // MARK: - Caching
