@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485DF46C257E53A30019FE13 /* HopoateTestingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 485DF46A257E53A30019FE13 /* HopoateTestingHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		485DF483257E54820019FE13 /* MockContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DF482257E54820019FE13 /* MockContainer.swift */; };
+		485DF4C7257E55520019FE13 /* HopoateTestingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 485DF4C5257E55520019FE13 /* HopoateTestingHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		485DF4D7257E55A80019FE13 /* MockContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DF482257E54820019FE13 /* MockContainer.swift */; };
+		485DF4DF257E55CE0019FE13 /* Hopoate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E41CE525165A5800B75D54 /* Hopoate.framework */; };
+		485DF4EC257E55E90019FE13 /* Hopoate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E409C42152598500B0D5B5 /* Hopoate.framework */; };
+		485DF508257E56470019FE13 /* HopoateTestingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 485DF506257E56460019FE13 /* HopoateTestingHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		485DF513257E56510019FE13 /* Hopoate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E41D0B25165B4400B75D54 /* Hopoate.framework */; };
+		485DF51B257E568C0019FE13 /* MockContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DF482257E54820019FE13 /* MockContainer.swift */; };
 		48E409CE2152598500B0D5B5 /* Hopoate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E409C42152598500B0D5B5 /* Hopoate.framework */; };
 		48E409D52152598500B0D5B5 /* Hopoate.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E409C72152598500B0D5B5 /* Hopoate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48E409DF21525B4000B0D5B5 /* ServiceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409DE21525B4000B0D5B5 /* ServiceRegistration.swift */; };
@@ -37,6 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		485DF468257E53A20019FE13 /* HopoateTestingHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HopoateTestingHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		485DF46A257E53A30019FE13 /* HopoateTestingHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HopoateTestingHelpers.h; sourceTree = "<group>"; };
+		485DF46B257E53A30019FE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		485DF482257E54820019FE13 /* MockContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockContainer.swift; path = Sources/HopoateTestingHelpers/MockContainer.swift; sourceTree = SOURCE_ROOT; };
+		485DF4C3257E55520019FE13 /* HopoateTestingHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HopoateTestingHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		485DF4C5257E55520019FE13 /* HopoateTestingHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HopoateTestingHelpers.h; sourceTree = "<group>"; };
+		485DF4C6257E55520019FE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		485DF504257E56460019FE13 /* HopoateTestingHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HopoateTestingHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		485DF506257E56460019FE13 /* HopoateTestingHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HopoateTestingHelpers.h; sourceTree = "<group>"; };
+		485DF507257E56470019FE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E409C42152598500B0D5B5 /* Hopoate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hopoate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E409C72152598500B0D5B5 /* Hopoate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hopoate.h; sourceTree = "<group>"; };
 		48E409C82152598500B0D5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +75,30 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		485DF465257E53A20019FE13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485DF4EC257E55E90019FE13 /* Hopoate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485DF4C0257E55520019FE13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485DF4DF257E55CE0019FE13 /* Hopoate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485DF501257E56460019FE13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485DF513257E56510019FE13 /* Hopoate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48E409C12152598500B0D5B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,14 +131,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		485DF469257E53A30019FE13 /* HopoateTestingHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				485DF46A257E53A30019FE13 /* HopoateTestingHelpers.h */,
+				485DF482257E54820019FE13 /* MockContainer.swift */,
+				485DF46B257E53A30019FE13 /* Info.plist */,
+			);
+			path = HopoateTestingHelpers;
+			sourceTree = "<group>";
+		};
+		485DF4C4257E55520019FE13 /* HopoateTestingHelpers tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				485DF4C5257E55520019FE13 /* HopoateTestingHelpers.h */,
+				485DF4C6257E55520019FE13 /* Info.plist */,
+			);
+			path = "HopoateTestingHelpers tvOS";
+			sourceTree = "<group>";
+		};
+		485DF4DE257E55CE0019FE13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		485DF505257E56460019FE13 /* HopoateTestingHelpers watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				485DF506257E56460019FE13 /* HopoateTestingHelpers.h */,
+				485DF507257E56470019FE13 /* Info.plist */,
+			);
+			path = "HopoateTestingHelpers watchOS";
+			sourceTree = "<group>";
+		};
 		48E409BA2152598500B0D5B5 = {
 			isa = PBXGroup;
 			children = (
 				48E409C62152598500B0D5B5 /* Hopoate */,
-				48E409D12152598500B0D5B5 /* HopoateTests */,
 				48E41CE625165A5800B75D54 /* Hopoate tvOS */,
 				48E41D0C25165B4400B75D54 /* Hopoate watchOS */,
+				48E409D12152598500B0D5B5 /* HopoateTests */,
+				485DF469257E53A30019FE13 /* HopoateTestingHelpers */,
+				485DF4C4257E55520019FE13 /* HopoateTestingHelpers tvOS */,
+				485DF505257E56460019FE13 /* HopoateTestingHelpers watchOS */,
 				48E409C52152598500B0D5B5 /* Products */,
+				485DF4DE257E55CE0019FE13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +188,9 @@
 				48E409CD2152598500B0D5B5 /* HopoateTests.xctest */,
 				48E41CE525165A5800B75D54 /* Hopoate.framework */,
 				48E41D0B25165B4400B75D54 /* Hopoate.framework */,
+				485DF468257E53A20019FE13 /* HopoateTestingHelpers.framework */,
+				485DF4C3257E55520019FE13 /* HopoateTestingHelpers.framework */,
+				485DF504257E56460019FE13 /* HopoateTestingHelpers.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +240,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		485DF463257E53A20019FE13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485DF46C257E53A30019FE13 /* HopoateTestingHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485DF4BE257E55520019FE13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485DF4C7257E55520019FE13 /* HopoateTestingHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485DF4FF257E56460019FE13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485DF508257E56470019FE13 /* HopoateTestingHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48E409BF2152598500B0D5B5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -182,6 +291,60 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		485DF467257E53A20019FE13 /* HopoateTestingHelpers iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485DF46D257E53A30019FE13 /* Build configuration list for PBXNativeTarget "HopoateTestingHelpers iOS" */;
+			buildPhases = (
+				485DF463257E53A20019FE13 /* Headers */,
+				485DF464257E53A20019FE13 /* Sources */,
+				485DF465257E53A20019FE13 /* Frameworks */,
+				485DF466257E53A20019FE13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HopoateTestingHelpers iOS";
+			productName = HopoateTestingHelpers;
+			productReference = 485DF468257E53A20019FE13 /* HopoateTestingHelpers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		485DF4C2257E55520019FE13 /* HopoateTestingHelpers tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485DF4C8257E55520019FE13 /* Build configuration list for PBXNativeTarget "HopoateTestingHelpers tvOS" */;
+			buildPhases = (
+				485DF4BE257E55520019FE13 /* Headers */,
+				485DF4BF257E55520019FE13 /* Sources */,
+				485DF4C0257E55520019FE13 /* Frameworks */,
+				485DF4C1257E55520019FE13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HopoateTestingHelpers tvOS";
+			productName = "HopoateTestingHelpers tvOS";
+			productReference = 485DF4C3257E55520019FE13 /* HopoateTestingHelpers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		485DF503257E56460019FE13 /* HopoateTestingHelpers watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485DF509257E56470019FE13 /* Build configuration list for PBXNativeTarget "HopoateTestingHelpers watchOS" */;
+			buildPhases = (
+				485DF4FF257E56460019FE13 /* Headers */,
+				485DF500257E56460019FE13 /* Sources */,
+				485DF501257E56460019FE13 /* Frameworks */,
+				485DF502257E56460019FE13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HopoateTestingHelpers watchOS";
+			productName = "HopoateTestingHelpers watchOS";
+			productReference = 485DF504257E56460019FE13 /* HopoateTestingHelpers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		48E409C32152598500B0D5B5 /* Hopoate iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48E409D82152598500B0D5B5 /* Build configuration list for PBXNativeTarget "Hopoate iOS" */;
@@ -264,6 +427,15 @@
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Darjeeling Apps";
 				TargetAttributes = {
+					485DF467257E53A20019FE13 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					485DF4C2257E55520019FE13 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					485DF503257E56460019FE13 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					48E409C32152598500B0D5B5 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1020;
@@ -297,11 +469,35 @@
 				48E41CE425165A5800B75D54 /* Hopoate tvOS */,
 				48E41D0A25165B4400B75D54 /* Hopoate watchOS */,
 				48E409CC2152598500B0D5B5 /* HopoateTests */,
+				485DF467257E53A20019FE13 /* HopoateTestingHelpers iOS */,
+				485DF4C2257E55520019FE13 /* HopoateTestingHelpers tvOS */,
+				485DF503257E56460019FE13 /* HopoateTestingHelpers watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		485DF466257E53A20019FE13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485DF4C1257E55520019FE13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485DF502257E56460019FE13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48E409C22152598500B0D5B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +529,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		485DF464257E53A20019FE13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485DF483257E54820019FE13 /* MockContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485DF4BF257E55520019FE13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485DF4D7257E55A80019FE13 /* MockContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485DF500257E56460019FE13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485DF51B257E568C0019FE13 /* MockContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48E409C02152598500B0D5B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,6 +605,170 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		485DF46E257E53A30019FE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TMU9Z4F4V5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HopoateTestingHelpers/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.HopoateTestingHelpers-iOS";
+				PRODUCT_NAME = HopoateTestingHelpers;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		485DF46F257E53A30019FE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TMU9Z4F4V5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HopoateTestingHelpers/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.HopoateTestingHelpers-iOS";
+				PRODUCT_NAME = HopoateTestingHelpers;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		485DF4C9257E55520019FE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TMU9Z4F4V5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "HopoateTestingHelpers tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.HopoateTestingHelpers-tvOS";
+				PRODUCT_NAME = HopoateTestingHelpers;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		485DF4CA257E55520019FE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TMU9Z4F4V5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "HopoateTestingHelpers tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.HopoateTestingHelpers-tvOS";
+				PRODUCT_NAME = HopoateTestingHelpers;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
+		485DF50A257E56470019FE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TMU9Z4F4V5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "HopoateTestingHelpers watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.HopoateTestingHelpers-watchOS";
+				PRODUCT_NAME = HopoateTestingHelpers;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		485DF50B257E56470019FE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TMU9Z4F4V5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "HopoateTestingHelpers watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.HopoateTestingHelpers-watchOS";
+				PRODUCT_NAME = HopoateTestingHelpers;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
 		48E409D62152598500B0D5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -721,6 +1105,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		485DF46D257E53A30019FE13 /* Build configuration list for PBXNativeTarget "HopoateTestingHelpers iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485DF46E257E53A30019FE13 /* Debug */,
+				485DF46F257E53A30019FE13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485DF4C8257E55520019FE13 /* Build configuration list for PBXNativeTarget "HopoateTestingHelpers tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485DF4C9257E55520019FE13 /* Debug */,
+				485DF4CA257E55520019FE13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485DF509257E56470019FE13 /* Build configuration list for PBXNativeTarget "HopoateTestingHelpers watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485DF50A257E56470019FE13 /* Debug */,
+				485DF50B257E56470019FE13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		48E409BE2152598500B0D5B5 /* Build configuration list for PBXProject "Hopoate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
