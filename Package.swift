@@ -11,13 +11,11 @@ let package = Package(
         .watchOS(.v5)
     ],
     products: [
-      .library(name: "Hopoate", type: .dynamic, targets: ["Hopoate"]),
-      .library(name: "HopoateTestingHelpers", targets: ["HopoateTestingHelpers"])
+      .library(name: "Hopoate", type: .dynamic, targets: ["Hopoate"])
     ],
     dependencies: [],
     targets: [
       .target(name: "Hopoate", dependencies: []),
-      .target(name: "HopoateTestingHelpers", dependencies: ["Hopoate"]),
       .testTarget(name: "HopoateTests", dependencies: ["Hopoate"])
     ],
     swiftLanguageVersions: [.v5]
