@@ -124,7 +124,7 @@ extension DependencyContainerTests {
     }
 }
 
-protocol TestProtocol: class {
+protocol TestProtocol: AnyObject {
     func doSomething()
 }
 
