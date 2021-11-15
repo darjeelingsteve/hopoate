@@ -5,6 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "Hopoate",
+    platforms: [
+        .iOS(.v12),
+        .tvOS(.v12),
+        .watchOS(.v5)
+    ],
     products: [
       .library(name: "Hopoate", type: .dynamic, targets: ["Hopoate"]),
       .library(name: "HopoateTestingHelpers", targets: ["HopoateTestingHelpers"])
