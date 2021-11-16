@@ -13,9 +13,7 @@ Hopoate is a lightweight dependency injection framework for iOS, allowing for si
 Registering a dependency is as simple as calling a single function on Hopoate's shared container:
 
 ```swift
-DependencyContainer.shared.register(service: AnalyticsProviding.self) {
-    return AnalyticsProvider()
-}
+DependencyContainer.shared.register(AnalyticsProvider(), for: AnalyticsProviding.self)
 ```
 
 Here we have registered an instance of `AnalyticsProvider` for the `AnalyticsProviding` protocol. This `AnalyticsProvider` instance is cached by the container and will be returned whenever the container is asked for a dependency matching `AnalyticsProviding`.
