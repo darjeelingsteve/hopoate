@@ -91,7 +91,49 @@ XCTAssertTrue(mockLogger.receivedLogMessage)
 DependencyContainer.shared.remove(token)
 ```
 
+This process of registering and unregistering a mock dependency can be simplified by using `MockContainer` from the `HopoateTestingHelpers` library (SPM users will need to use the separate [HopoateTestingHelpersPackage](https://github.com/darjeelingsteve/HopoateTestingHelpersPackage) package). The mock container registers a mock object for a given protocol with the dependency container, and unregisters the mock when it is deallocated. Here's an example:
 
+```swift
+import XCTest
+import HopoateTestingHelpers
+@testable import MyApp
+
+final class MyViewControllerTests: XCTestCase {
+    private var myViewController: MyViewController!
+    private var mockAnalyticsContainer: MockContainer<AnalyticsProviding, MockAnalyticsProvider>!
+    
+    override func setUp() {
+        super.setUp()
+        mockAnalyticsContainer = MockContainer(MockAnalyticsProvider())
+    }
+    
+    override func tearDown() {
+        myViewController = nil
+        mockAnalyticsContainer = nil
+        super.tearDown()
+    }
+    
+    func testItSendsAMessageToTheAnalyticsProviderWhenTheButtonIsTapped() {
+        givenAViewController()
+        whenTheUserTapsTheButton()
+        XCTAssertEqual(mockAnalyticsContainer.mock.receivedMessage, "button_tapped")
+    }
+    
+    private func givenAViewController() {
+        myViewController = MyViewController()
+    }
+    
+    private func whenTheUserTapsTheButton() {
+        myViewController.button.sendActions(for: .primaryActionTriggered)
+    }
+}
+```
+
+We have a `MockContainer` that will register a dependency for the `AnalyticsProviding` protocol. It will use an instance of `MockAnalyticsProvider` as the dependency. In our `setUp` method, we create the container and the mock analytics provider.
+
+Later, in our test function, we execute some code that uses the `AnalyticsProviding` dependency registered with the dependency container, which in this case is when the user taps a button. Once the button tap has occurred, we can check our mock dependency to see if it has received what we expected, by accessing it from the mock container's `mock` property.
+
+Once the test has run, the `tearDown` function is executed, which sets our `mockAnalyticsContainer` to `nil`. This in turn removes the `MockAnalyticsProvider` from the dependency container, leaving the container in the same state that it was before the test was run.
 
 ### Dependency Caching
 
@@ -109,20 +151,6 @@ If you do not want this caching behaviour, it can be disabled when registering t
 DependencyContainer.shared.register(service: AnalyticsProviding.self, cacheService: false) {
     return AnalyticsProvider() // <- A new instance of AnalyticsProvider will be provided to each call to DependencyContainer.shared.resolve(AnalyticsProviding.self)
 }
-```
-
-
-
-### Shorthand Functions
-
-Two shorthand functions are provided for resolving dependencies to reduce the amount of code needed at the call site when requesting dependency resolution from the shared container:
-
-```swift
-// Shorthand for DependencyContainer.shared.resolve(AnalyticsProviding.self)
-resolve(AnalyticsProviding.self)
-
-// Shorthand for DependencyContainer.shared.optionalResolve(Maybe.self)
-optionalResolve(Maybe.self)
 ```
 
 
