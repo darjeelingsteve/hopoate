@@ -30,6 +30,14 @@ let analyticsProvider = DependencyContainer.shared.resolve(AnalyticsProviding.se
 
 This resolves the dependency conforming to `AnalyticsProviding` that we registered earlier.
 
+As a convenience, a property wrapper is provided to resolve dependencies automatically:
+
+```swift
+@Dependency private var analyticsProviding: AnalyticsProviding
+```
+
+This property accesses the equivalent of `DependencyContainer.shared.resolve(AnalyticsProviding.self)`. 
+
 
 
 ### Optional Dependency Resolution
@@ -39,6 +47,12 @@ For dependencies that may not always be registered, an `optionalResolve` functio
 ```swift
 let optionalDependency = DependencyContainer.shared.optionalResolve(Maybe.self)
 optionalDependency?.perhaps()
+```
+
+These can also be accessed using a property wrapper:
+
+```swift
+@OptionalDependency private var maybe: Maybe?
 ```
 
 
