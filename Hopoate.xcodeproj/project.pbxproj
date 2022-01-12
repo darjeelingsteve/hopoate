@@ -351,9 +351,9 @@
 			productReference = 485DF504257E56460019FE13 /* HopoateTestingHelpers.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		48E409C32152598500B0D5B5 /* Hopoate iOS */ = {
+		48E409C32152598500B0D5B5 /* Hopoate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48E409D82152598500B0D5B5 /* Build configuration list for PBXNativeTarget "Hopoate iOS" */;
+			buildConfigurationList = 48E409D82152598500B0D5B5 /* Build configuration list for PBXNativeTarget "Hopoate" */;
 			buildPhases = (
 				48E409BF2152598500B0D5B5 /* Headers */,
 				48E409C02152598500B0D5B5 /* Sources */,
@@ -364,7 +364,7 @@
 			);
 			dependencies = (
 			);
-			name = "Hopoate iOS";
+			name = Hopoate;
 			productName = Hopoate;
 			productReference = 48E409C42152598500B0D5B5 /* Hopoate.framework */;
 			productType = "com.apple.product-type.framework";
@@ -471,7 +471,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				48E409C32152598500B0D5B5 /* Hopoate iOS */,
+				48E409C32152598500B0D5B5 /* Hopoate */,
 				48E41CE425165A5800B75D54 /* Hopoate tvOS */,
 				48E41D0A25165B4400B75D54 /* Hopoate watchOS */,
 				48E409CC2152598500B0D5B5 /* HopoateTests */,
@@ -605,7 +605,7 @@
 /* Begin PBXTargetDependency section */
 		48E409D02152598500B0D5B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 48E409C32152598500B0D5B5 /* Hopoate iOS */;
+			target = 48E409C32152598500B0D5B5 /* Hopoate */;
 			targetProxy = 48E409CF2152598500B0D5B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1155,7 +1155,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48E409D82152598500B0D5B5 /* Build configuration list for PBXNativeTarget "Hopoate iOS" */ = {
+		48E409D82152598500B0D5B5 /* Build configuration list for PBXNativeTarget "Hopoate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48E409D92152598500B0D5B5 /* Debug */,
