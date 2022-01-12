@@ -337,7 +337,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.HopoateTestingHelpers-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.HopoateTestingHelpers;
 				PRODUCT_NAME = HopoateTestingHelpers;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos watchsimulator appletvos appletvsimulator";
@@ -368,7 +368,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.HopoateTestingHelpers-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.HopoateTestingHelpers;
 				PRODUCT_NAME = HopoateTestingHelpers;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos watchsimulator appletvos appletvsimulator";
