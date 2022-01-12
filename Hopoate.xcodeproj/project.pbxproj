@@ -219,9 +219,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		485DF467257E53A20019FE13 /* HopoateTestingHelpers iOS */ = {
+		485DF467257E53A20019FE13 /* HopoateTestingHelpers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 485DF46D257E53A30019FE13 /* Build configuration list for PBXNativeTarget "HopoateTestingHelpers iOS" */;
+			buildConfigurationList = 485DF46D257E53A30019FE13 /* Build configuration list for PBXNativeTarget "HopoateTestingHelpers" */;
 			buildPhases = (
 				485DF463257E53A20019FE13 /* Headers */,
 				485DF464257E53A20019FE13 /* Sources */,
@@ -232,7 +232,7 @@
 			);
 			dependencies = (
 			);
-			name = "HopoateTestingHelpers iOS";
+			name = HopoateTestingHelpers;
 			productName = HopoateTestingHelpers;
 			productReference = 485DF468257E53A20019FE13 /* HopoateTestingHelpers.framework */;
 			productType = "com.apple.product-type.framework";
@@ -353,7 +353,7 @@
 			targets = (
 				48E409C32152598500B0D5B5 /* Hopoate */,
 				48E409CC2152598500B0D5B5 /* HopoateTests */,
-				485DF467257E53A20019FE13 /* HopoateTestingHelpers iOS */,
+				485DF467257E53A20019FE13 /* HopoateTestingHelpers */,
 				485DF4C2257E55520019FE13 /* HopoateTestingHelpers tvOS */,
 				485DF503257E56460019FE13 /* HopoateTestingHelpers watchOS */,
 			);
@@ -859,7 +859,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		485DF46D257E53A30019FE13 /* Build configuration list for PBXNativeTarget "HopoateTestingHelpers iOS" */ = {
+		485DF46D257E53A30019FE13 /* Build configuration list for PBXNativeTarget "HopoateTestingHelpers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				485DF46E257E53A30019FE13 /* Debug */,

@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "485DF467257E53A20019FE13"
                BuildableName = "HopoateTestingHelpers.framework"
-               BlueprintName = "HopoateTestingHelpers iOS"
+               BlueprintName = "HopoateTestingHelpers"
                ReferencedContainer = "container:Hopoate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -52,7 +52,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "485DF467257E53A20019FE13"
             BuildableName = "HopoateTestingHelpers.framework"
-            BlueprintName = "HopoateTestingHelpers iOS"
+            BlueprintName = "HopoateTestingHelpers"
             ReferencedContainer = "container:Hopoate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
