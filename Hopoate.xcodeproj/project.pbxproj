@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		484F4971278EC98F00C9475E /* Hopoate.h in Headers */ = {isa = PBXBuildFile; fileRef = 484F4970278EC98F00C9475E /* Hopoate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		485DF46C257E53A30019FE13 /* HopoateTestingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 485DF46A257E53A30019FE13 /* HopoateTestingHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		485DF483257E54820019FE13 /* MockContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DF482257E54820019FE13 /* MockContainer.swift */; };
 		485DF4C7257E55520019FE13 /* HopoateTestingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 485DF4C5257E55520019FE13 /* HopoateTestingHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		484F4970278EC98F00C9475E /* Hopoate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hopoate.h; sourceTree = "<group>"; };
 		485DF468257E53A20019FE13 /* HopoateTestingHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HopoateTestingHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		485DF46A257E53A30019FE13 /* HopoateTestingHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HopoateTestingHelpers.h; sourceTree = "<group>"; };
 		485DF46B257E53A30019FE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				48E409C62152598500B0D5B5 /* Hopoate */,
+				484F4970278EC98F00C9475E /* Hopoate.h */,
 				48E41CE625165A5800B75D54 /* Hopoate tvOS */,
 				48E41D0C25165B4400B75D54 /* Hopoate watchOS */,
 				48E409D12152598500B0D5B5 /* HopoateTests */,
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E409D52152598500B0D5B5 /* Hopoate.h in Headers */,
+				484F4971278EC98F00C9475E /* Hopoate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
