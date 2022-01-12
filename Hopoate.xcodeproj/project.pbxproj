@@ -16,7 +16,6 @@
 		485DF508257E56470019FE13 /* HopoateTestingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 485DF506257E56460019FE13 /* HopoateTestingHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		485DF51B257E568C0019FE13 /* MockContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DF482257E54820019FE13 /* MockContainer.swift */; };
 		48E409CE2152598500B0D5B5 /* Hopoate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E409C42152598500B0D5B5 /* Hopoate.framework */; };
-		48E409D52152598500B0D5B5 /* Hopoate.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E409C72152598500B0D5B5 /* Hopoate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48E409DF21525B4000B0D5B5 /* ServiceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409DE21525B4000B0D5B5 /* ServiceRegistration.swift */; };
 		48E409E121525B7600B0D5B5 /* ServiceProviderRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409E021525B7600B0D5B5 /* ServiceProviderRegistrar.swift */; };
 		48E409E321525BA400B0D5B5 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E409E221525BA400B0D5B5 /* DependencyContainer.swift */; };
@@ -48,18 +47,12 @@
 		485DF506257E56460019FE13 /* HopoateTestingHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HopoateTestingHelpers.h; sourceTree = "<group>"; };
 		485DF507257E56470019FE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E409C42152598500B0D5B5 /* Hopoate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hopoate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48E409C72152598500B0D5B5 /* Hopoate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hopoate.h; sourceTree = "<group>"; };
-		48E409C82152598500B0D5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E409CD2152598500B0D5B5 /* HopoateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopoateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E409D42152598500B0D5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E409DE21525B4000B0D5B5 /* ServiceRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRegistration.swift; sourceTree = "<group>"; };
 		48E409E021525B7600B0D5B5 /* ServiceProviderRegistrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderRegistrar.swift; sourceTree = "<group>"; };
 		48E409E221525BA400B0D5B5 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		48E409E421525BF100B0D5B5 /* DependencyContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainerTests.swift; sourceTree = "<group>"; };
-		48E41CE725165A5800B75D54 /* Hopoate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hopoate.h; sourceTree = "<group>"; };
-		48E41CE825165A5800B75D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48E41D0D25165B4400B75D54 /* Hopoate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hopoate.h; sourceTree = "<group>"; };
-		48E41D0E25165B4400B75D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		964A410A22DDFD1800A7FC02 /* DependencyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyWrappers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,8 +138,6 @@
 				48E409C62152598500B0D5B5 /* Hopoate */,
 				484F4970278EC98F00C9475E /* Hopoate.h */,
 				484F4972278EC9CA00C9475E /* Info.plist */,
-				48E41CE625165A5800B75D54 /* Hopoate tvOS */,
-				48E41D0C25165B4400B75D54 /* Hopoate watchOS */,
 				48E409D12152598500B0D5B5 /* HopoateTests */,
 				485DF469257E53A30019FE13 /* HopoateTestingHelpers */,
 				485DF4C4257E55520019FE13 /* HopoateTestingHelpers tvOS */,
@@ -171,12 +162,10 @@
 		48E409C62152598500B0D5B5 /* Hopoate */ = {
 			isa = PBXGroup;
 			children = (
-				48E409C72152598500B0D5B5 /* Hopoate.h */,
 				48E409E221525BA400B0D5B5 /* DependencyContainer.swift */,
 				48E409E021525B7600B0D5B5 /* ServiceProviderRegistrar.swift */,
 				48E409DE21525B4000B0D5B5 /* ServiceRegistration.swift */,
 				964A410A22DDFD1800A7FC02 /* DependencyWrappers.swift */,
-				48E409C82152598500B0D5B5 /* Info.plist */,
 			);
 			name = Hopoate;
 			path = Sources/Hopoate;
@@ -190,24 +179,6 @@
 			);
 			name = HopoateTests;
 			path = Tests/HopoateTests;
-			sourceTree = "<group>";
-		};
-		48E41CE625165A5800B75D54 /* Hopoate tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				48E41CE725165A5800B75D54 /* Hopoate.h */,
-				48E41CE825165A5800B75D54 /* Info.plist */,
-			);
-			path = "Hopoate tvOS";
-			sourceTree = "<group>";
-		};
-		48E41D0C25165B4400B75D54 /* Hopoate watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				48E41D0D25165B4400B75D54 /* Hopoate.h */,
-				48E41D0E25165B4400B75D54 /* Info.plist */,
-			);
-			path = "Hopoate watchOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +212,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48E409D52152598500B0D5B5 /* Hopoate.h in Headers */,
 				484F4971278EC98F00C9475E /* Hopoate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
