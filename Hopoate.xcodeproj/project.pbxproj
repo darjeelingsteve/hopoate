@@ -48,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		484F4970278EC98F00C9475E /* Hopoate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hopoate.h; sourceTree = "<group>"; };
+		484F4972278EC9CA00C9475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		485DF468257E53A20019FE13 /* HopoateTestingHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HopoateTestingHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		485DF46A257E53A30019FE13 /* HopoateTestingHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HopoateTestingHelpers.h; sourceTree = "<group>"; };
 		485DF46B257E53A30019FE13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -173,6 +174,7 @@
 			children = (
 				48E409C62152598500B0D5B5 /* Hopoate */,
 				484F4970278EC98F00C9475E /* Hopoate.h */,
+				484F4972278EC9CA00C9475E /* Info.plist */,
 				48E41CE625165A5800B75D54 /* Hopoate tvOS */,
 				48E41D0C25165B4400B75D54 /* Hopoate watchOS */,
 				48E409D12152598500B0D5B5 /* HopoateTests */,
@@ -911,7 +913,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Hopoate/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -946,7 +948,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Hopoate/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
