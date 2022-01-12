@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1200"
+   LastUpgradeVersion = "1220"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "48E41D0A25165B4400B75D54"
-               BuildableName = "Hopoate.framework"
-               BlueprintName = "Hopoate watchOS"
+               BlueprintIdentifier = "485DF467257E53A20019FE13"
+               BuildableName = "HopoateTestingHelpers.framework"
+               BlueprintName = "HopoateTestingHelpers"
                ReferencedContainer = "container:Hopoate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "48E41D0A25165B4400B75D54"
-            BuildableName = "Hopoate.framework"
-            BlueprintName = "Hopoate watchOS"
+            BlueprintIdentifier = "485DF467257E53A20019FE13"
+            BuildableName = "HopoateTestingHelpers.framework"
+            BlueprintName = "HopoateTestingHelpers"
             ReferencedContainer = "container:Hopoate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
