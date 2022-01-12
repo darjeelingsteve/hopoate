@@ -764,7 +764,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.Hopoate-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.Hopoate;
 				PRODUCT_NAME = Hopoate;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos watchsimulator appletvos appletvsimulator";
@@ -799,7 +799,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.darjeeling.Hopoate-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.Hopoate;
 				PRODUCT_NAME = Hopoate;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchos watchsimulator appletvos appletvsimulator";
