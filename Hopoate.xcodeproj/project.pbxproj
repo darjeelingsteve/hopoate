@@ -20,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4883A6B227D7DFC800BCDE25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48E409BB2152598500B0D5B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48E409C32152598500B0D5B5;
+			remoteInfo = Hopoate;
+		};
 		48E409CF2152598500B0D5B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48E409BB2152598500B0D5B5 /* Project object */;
@@ -169,6 +176,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4883A6B327D7DFC800BCDE25 /* PBXTargetDependency */,
 			);
 			name = HopoateTestingHelpers;
 			productName = HopoateTestingHelpers;
@@ -309,6 +317,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4883A6B327D7DFC800BCDE25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48E409C32152598500B0D5B5 /* Hopoate */;
+			targetProxy = 4883A6B227D7DFC800BCDE25 /* PBXContainerItemProxy */;
+		};
 		48E409D02152598500B0D5B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 48E409C32152598500B0D5B5 /* Hopoate */;
