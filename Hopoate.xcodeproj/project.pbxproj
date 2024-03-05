@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48359D632B977E70007D415F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 48359D622B977E70007D415F /* PrivacyInfo.xcprivacy */; };
 		484F4971278EC98F00C9475E /* Hopoate.h in Headers */ = {isa = PBXBuildFile; fileRef = 484F4970278EC98F00C9475E /* Hopoate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		485DF46C257E53A30019FE13 /* HopoateTestingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 485DF46A257E53A30019FE13 /* HopoateTestingHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		485DF483257E54820019FE13 /* MockContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DF482257E54820019FE13 /* MockContainer.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48359D622B977E70007D415F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		484F4970278EC98F00C9475E /* Hopoate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hopoate.h; sourceTree = "<group>"; };
 		484F4972278EC9CA00C9475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		485DF468257E53A20019FE13 /* HopoateTestingHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HopoateTestingHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48359D612B977E70007D415F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48359D622B977E70007D415F /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		485DF469257E53A30019FE13 /* HopoateTestingHelpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 		48E409C62152598500B0D5B5 /* Hopoate */ = {
 			isa = PBXGroup;
 			children = (
+				48359D612B977E70007D415F /* Resources */,
 				48E409E221525BA400B0D5B5 /* DependencyContainer.swift */,
 				48E409E021525B7600B0D5B5 /* ServiceProviderRegistrar.swift */,
 				48E409DE21525B4000B0D5B5 /* ServiceRegistration.swift */,
@@ -225,8 +236,9 @@
 		48E409BB2152598500B0D5B5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "Darjeeling Apps";
 				TargetAttributes = {
 					485DF467257E53A20019FE13 = {
@@ -274,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48359D632B977E70007D415F /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,12 +349,14 @@
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TMU9Z4F4V5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = HopoateTestingHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -350,6 +365,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.HopoateTestingHelpers;
 				PRODUCT_NAME = HopoateTestingHelpers;
 				SKIP_INSTALL = YES;
@@ -367,12 +384,14 @@
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TMU9Z4F4V5;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = HopoateTestingHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -381,6 +400,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.HopoateTestingHelpers;
 				PRODUCT_NAME = HopoateTestingHelpers;
 				SKIP_INSTALL = YES;
@@ -431,6 +452,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -496,6 +518,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -530,6 +553,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -539,6 +563,8 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.9.1;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.Hopoate;
 				PRODUCT_NAME = Hopoate;
 				SKIP_INSTALL = YES;
@@ -565,6 +591,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -574,6 +601,8 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.9.1;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darjeeling.Hopoate;
 				PRODUCT_NAME = Hopoate;
 				SKIP_INSTALL = YES;
