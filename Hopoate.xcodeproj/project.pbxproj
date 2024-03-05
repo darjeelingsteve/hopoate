@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48359D632B977E70007D415F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 48359D622B977E70007D415F /* PrivacyInfo.xcprivacy */; };
 		484F4971278EC98F00C9475E /* Hopoate.h in Headers */ = {isa = PBXBuildFile; fileRef = 484F4970278EC98F00C9475E /* Hopoate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		485DF46C257E53A30019FE13 /* HopoateTestingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 485DF46A257E53A30019FE13 /* HopoateTestingHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		485DF483257E54820019FE13 /* MockContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DF482257E54820019FE13 /* MockContainer.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48359D622B977E70007D415F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		484F4970278EC98F00C9475E /* Hopoate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hopoate.h; sourceTree = "<group>"; };
 		484F4972278EC9CA00C9475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		485DF468257E53A20019FE13 /* HopoateTestingHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HopoateTestingHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48359D612B977E70007D415F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48359D622B977E70007D415F /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		485DF469257E53A30019FE13 /* HopoateTestingHelpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 		48E409C62152598500B0D5B5 /* Hopoate */ = {
 			isa = PBXGroup;
 			children = (
+				48359D612B977E70007D415F /* Resources */,
 				48E409E221525BA400B0D5B5 /* DependencyContainer.swift */,
 				48E409E021525B7600B0D5B5 /* ServiceProviderRegistrar.swift */,
 				48E409DE21525B4000B0D5B5 /* ServiceRegistration.swift */,
@@ -274,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48359D632B977E70007D415F /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
