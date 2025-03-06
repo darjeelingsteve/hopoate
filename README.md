@@ -135,6 +135,38 @@ Later, in our test function, we execute some code that uses the `AnalyticsProvid
 
 Once the test has run, the `tearDown` function is executed, which sets our `mockAnalyticsContainer` to `nil`. This in turn removes the `MockAnalyticsProvider` from the dependency container, leaving the container in the same state that it was before the test was run.
 
+### Swift Testing
+
+If you are using Swift Testing with Swift 6.1 or above, you can use the `isolatedDependencies` `Suite` `Trait` to provide a test-scoped `DependencyContainer`. Using this method means that:
+- Your dependencies will not clash with other tests when runnning in parallel
+- You do not need to unregister dependencies (unless you really want to).
+
+To use the `isolatedDependencies` trait, create a test suite as such:
+
+```swift
+import Testing
+import HopoateTestingHelpers
+
+
+@MainActor
+@Suite(.isolatedDependencies)
+class MyViewControllerTests {
+
+    private let myViewController = MyViewController()
+    private let mockAnalyticsContainer = MockContainer<AnalyticsProviding, MockAnalyticsProvider>(MockAnalyticsProvider())
+    
+    func testItSendsAMessageToTheAnalyticsProviderWhenTheButtonIsTapped() {
+        whenTheUserTapsTheButton()
+        XCTAssertEqual(mockAnalyticsContainer.mock.receivedMessage, "button_tapped")
+    }
+    
+    private func whenTheUserTapsTheButton() {
+        myViewController.button.sendActions(for: .primaryActionTriggered)
+    }
+}
+
+```
+
 ### Dependency Caching
 
 By default, when a service is registered with the dependency container, the container caches the service that is given in the creation closure.

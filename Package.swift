@@ -6,17 +6,18 @@ import PackageDescription
 let package = Package(
     name: "Hopoate",
     platforms: [
-        .iOS(.v12),
-        .tvOS(.v12),
-        .watchOS(.v5)
+        .iOS(.v13),
+        .tvOS(.v13),
+        .watchOS(.v6),
+        .macOS(.v10_15)
     ],
     products: [
-      .library(name: "Hopoate", type: .dynamic, targets: ["Hopoate"])
+        .library(name: "Hopoate", type: .dynamic, targets: ["Hopoate"]),
     ],
     dependencies: [],
     targets: [
-      .target(name: "Hopoate", dependencies: [], resources: [.copy("Resources/PrivacyInfo.xcprivacy")]),
-      .testTarget(name: "HopoateTests", dependencies: ["Hopoate"])
+        .target(name: "Hopoate", dependencies: [], resources: [.copy("Resources/PrivacyInfo.xcprivacy")]),
+        .testTarget(name: "HopoateTests", dependencies: ["Hopoate"])
     ],
     swiftLanguageVersions: [.v5]
 )
