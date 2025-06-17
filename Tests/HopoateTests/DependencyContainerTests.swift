@@ -128,7 +128,7 @@ protocol TestProtocol: AnyObject {
     func doSomething()
 }
 
-class TestClass: TestProtocol {
+final class TestClass: TestProtocol {
     private(set) var receivedDoSomethingMessage = false
     
     func doSomething() {
