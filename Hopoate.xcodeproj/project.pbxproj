@@ -241,7 +241,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = "Darjeeling Apps";
 				TargetAttributes = {
 					485DF467257E53A20019FE13 = {
@@ -621,7 +621,6 @@
 		48E409DC2152598500B0D5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/HopoateTests/Info.plist;
@@ -641,7 +640,6 @@
 		48E409DD2152598500B0D5B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/HopoateTests/Info.plist;
