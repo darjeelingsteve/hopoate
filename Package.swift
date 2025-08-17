@@ -13,11 +13,18 @@ let package = Package(
     ],
     products: [
         .library(name: "Hopoate", type: .dynamic, targets: ["Hopoate"]),
+        .library(name: "HopoateTestingHelpers", type: .dynamic, targets: ["HopoateTestingHelpers"]),
     ],
     dependencies: [],
     targets: [
-        .target(name: "Hopoate", dependencies: [], resources: [.copy("Resources/PrivacyInfo.xcprivacy")]),
-        .testTarget(name: "HopoateTests", dependencies: ["Hopoate"])
+        .binaryTarget(
+            name: "Hopoate",
+            url: "https://github.com/darjeelingsteve/Hopoate/releases/download/1.13.0/Hopoate.xcframework.zip",
+            checksum: "e7ac58131fe139fb28031693d1d058538c00e2cbc89b39db3941844d04a69c47"),
+        .binaryTarget(
+            name: "HopoateTestingHelpers",
+            url: "https://github.com/darjeelingsteve/Hopoate/releases/download/1.13.0/HopoateTestingHelpers.xcframework.zip",
+            checksum: "4d6e0a5a20d33608e16459dfbbd99843cbaaaae259ea3973e2bdbbcee73c1016"),
     ],
     swiftLanguageVersions: [.v5]
 )
