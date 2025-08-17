@@ -12,8 +12,8 @@ let package = Package(
         .macOS(.v10_15)
     ],
     products: [
-        .library(name: "Hopoate", type: .dynamic, targets: ["Hopoate"]),
-        .library(name: "HopoateTestingHelpers", type: .dynamic, targets: ["HopoateTestingHelpers"]),
+        .library(name: "Hopoate", targets: ["Hopoate"]),
+        .library(name: "HopoateTestingHelpers", targets: ["HopoateTestingHelpers"]),
     ],
     dependencies: [],
     targets: [
