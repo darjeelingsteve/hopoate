@@ -47,7 +47,7 @@ jobs:
       run: scripts/build-xcframeworks.sh build/xcframeworks
 
     - name: Point Package.swift at this release
-      run: scripts/update-package-manifest.sh "$VERSION" build/xcframeworks
+      run: scripts/update-package-manifest.sh "$VERSION" build/xcframeworks "$GITHUB_REPOSITORY"
 
     - name: Commit, tag and push
       run: |
