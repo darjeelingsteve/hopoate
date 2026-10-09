@@ -7,13 +7,21 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-
+  # The package ships binary targets, so `swift build` / `swift test` against the manifest no longer
+  # exercise the source. The tests run from the Xcode project instead, on macOS so no simulator is
+  # needed.
+  test:
     runs-on: macos-15
-
     steps:
     - uses: actions/checkout@v4
-    - name: Build
-      run: swift build -v
     - name: Run tests
-      run: swift test -v
+      # Signed to run locally: a macOS test bundle must be signed, and CI has no team.
+      run: xcodebuild test -project Hopoate.xcodeproj -scheme Hopoate -destination 'platform=macOS' CODE_SIGN_IDENTITY=- CODE_SIGN_STYLE=Manual
+
+  # Every slice Package.swift promises must build, so a release cannot ship without one again.
+  xcframeworks:
+    runs-on: macos-15
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the xcframeworks
+      run: scripts/build-xcframeworks.sh
