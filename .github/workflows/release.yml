@@ -1,0 +1,88 @@
+name: Release
+
+# Builds the xcframeworks, points Package.swift at them, tags the result and publishes the release.
+# Run it from the Actions tab with the version to release; nothing about a release is done by hand.
+#
+# Order matters. Package.swift names each zip by its release URL, which is known before the release
+# exists, so the manifest is committed and tagged first and the zips are attached to that tag after.
+# A consumer resolving the tag therefore always sees a manifest whose checksums match the assets.
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release, e.g. 1.13.1 (no leading v, matching the existing tags)"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: macos-15
+    env:
+      VERSION: ${{ inputs.version }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: master
+        fetch-depth: 0
+
+    - name: Check the version
+      run: |
+        [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "::error::'$VERSION' is not MAJOR.MINOR.PATCH"; exit 1; }
+        if git rev-parse -q --verify "refs/tags/$VERSION" >/dev/null; then
+          echo "::error::Tag $VERSION already exists"; exit 1
+        fi
+
+    - name: Run the tests
+      run: xcodebuild test -project Hopoate.xcodeproj -scheme Hopoate -destination 'platform=macOS' CODE_SIGN_IDENTITY=- CODE_SIGN_STYLE=Manual
+
+    - name: Build the xcframeworks
+      run: scripts/build-xcframeworks.sh build/xcframeworks
+
+    - name: Point Package.swift at this release
+      run: scripts/update-package-manifest.sh "$VERSION" build/xcframeworks
+
+    - name: Commit, tag and push
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add Package.swift
+        git commit -m "Release $VERSION"
+        git tag "$VERSION"
+        git push origin HEAD:master "refs/tags/$VERSION"
+
+    - name: Publish the release
+      run: |
+        gh release create "$VERSION" \
+          build/xcframeworks/Hopoate.xcframework.zip \
+          build/xcframeworks/HopoateTestingHelpers.xcframework.zip \
+          --verify-tag --title "$VERSION" --generate-notes
+
+    # The proof a consumer gets: resolve the new tag from scratch and build against it on macOS, the
+    # platform 1.13.0 shipped without.
+    - name: Resolve the release as a consumer would
+      run: |
+        mkdir -p "$RUNNER_TEMP/consumer/Sources/Consumer"
+        cd "$RUNNER_TEMP/consumer"
+        cat > Package.swift <<MANIFEST
+        // swift-tools-version:5.9
+        import PackageDescription
+        let package = Package(
+            name: "Consumer",
+            platforms: [.macOS(.v12)],
+            dependencies: [.package(url: "https://github.com/${GITHUB_REPOSITORY}", exact: "${VERSION}")],
+            targets: [.target(name: "Consumer", dependencies: [
+                .product(name: "Hopoate", package: "$(basename "$GITHUB_REPOSITORY")"),
+                .product(name: "HopoateTestingHelpers", package: "$(basename "$GITHUB_REPOSITORY")"),
+            ])]
+        )
+        MANIFEST
+        printf 'import Hopoate\nimport HopoateTestingHelpers\nlet container = DependencyContainer()\n' > Sources/Consumer/Consumer.swift
+        swift build
