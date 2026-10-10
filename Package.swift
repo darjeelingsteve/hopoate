@@ -19,12 +19,12 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Hopoate",
-            url: "https://github.com/darjeelingsteve/Hopoate/releases/download/1.13.0/Hopoate.xcframework.zip",
-            checksum: "e7ac58131fe139fb28031693d1d058538c00e2cbc89b39db3941844d04a69c47"),
+            url: "https://github.com/darjeelingsteve/hopoate/releases/download/1.14.0/Hopoate.xcframework.zip",
+            checksum: "0d9c0415a318284bb2fdd0ba897d9c414e5fb63f3a1649a84c6d3e2c55264552"),
         .binaryTarget(
             name: "HopoateTestingHelpers",
-            url: "https://github.com/darjeelingsteve/Hopoate/releases/download/1.13.0/HopoateTestingHelpers.xcframework.zip",
-            checksum: "4d6e0a5a20d33608e16459dfbbd99843cbaaaae259ea3973e2bdbbcee73c1016"),
+            url: "https://github.com/darjeelingsteve/hopoate/releases/download/1.14.0/HopoateTestingHelpers.xcframework.zip",
+            checksum: "482c09b0aa4a0347c54581a9b27b3d3028f34951ac831073ef5128d6e3a520e8"),
     ],
     swiftLanguageVersions: [.v5]
 )
